@@ -1,0 +1,160 @@
+body{
+
+
+
+    /* background-image: Events-venues-with-video-conferencing.jpg(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("background.jpg"); */
+    background-size: cover;
+    background-position: center;
+
+    background-color: #cccccc;
+    }
+    #my_form
+    {
+    background-color: transparent;
+    }
+
+    margin: 100px 0px;
+    padding: 0px;
+    text-align: center;
+    align: center;
+    }
+    img[src^="../img/"]{
+
+    }
+    input[type=text],[type=password],[type=number]{
+    width: 20%;
+    padding: 7px 10px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    }
+    button{
+    background-color: #4caf50;
+    width: 10%;
+    padding: 9px 5px;
+    margin: 5px 0;
+    cursor: pointer;
+    border: none;
+    color: #fffff;
+    }
+    button:hover{
+    opacity: 0.8;
+    }
+    #un,#ps{
+    font-family: 'lato',sans-serif;
+    }
+
+    body{
+    margin: 100px;
+    text-align: center;
+    }
+    input[type=text],[type=password],[type=number]{
+    width: 20%;
+    margin: 8px 0;
+    padding: 7px 0;
+    display: inline-block;
+    box-sizing: border-box;
+    }
+    button{
+    background-color: blue;
+    width: 10;
+    padding: 9px 5px;
+    margin: 5px 0;
+    cursor: pointer;
+    border: none;
+    color: #ffffff;
+    margin-left: 80px;
+    }
+    button:hover{
+    opacity:0.8;
+    }
+    #fn,#ln,#un,#pwd,#em,#mn,#fm,#cy{
+    font-family:’Lato’, sans-serif;
+    color: black;
+    }
+    #em{
+    margin-left:30px;
+    }
+
+    .box {
+        width: 600px;
+        height: 400px;
+        padding: 20px;
+        margine: 100px;
+        box-show: 0px 0px 10px 2px grey;
+        border: 10px solid red;
+        font-family:sans-serif;
+
+        background-image: url(misty-hills-*conferencing003.jpg);
+        background-size: cover;
+
+   }
+
+#logo{
+}
+
+#un,#ps{
+  font-family: Century Gothic;
+  font-size: 20px;
+  color: #000000;
+  font-weight: bold;
+}
+   body{
+     top: 10%;
+     position: relative;
+     background-image: url('https://images.assetsdelivery.com/compings_v2/flippo/flippo0708/flippo070800197.jpg');
+   }
+input{
+  position: sticky;
+  min-width: 45%;
+  border-radius: 20px;
+  text-align: center;
+  left: 50%;
+}
+
+#container{
+    top: 0px;
+    padding: 20px 20px;
+    position: sticky;
+    margin: 0 auto;
+    width: 20%
+    left: 10%;
+    right: auto;
+    max-width: 50%;
+    border: 2px;
+    border-style: solid;
+    border-radius: 50px;
+    border-width: medium;
+    border-color: #000000;
+}
+#sub{
+  width: 25%;
+  position: relative;
+}
+#sub:hover{
+  background-color: #000066;
+  padding-left: 5%;
+  font-size: 200%;
+  width: 50%;
+  height: 60%;
+  position: relative;
+}
+#new_member{
+  position: relative;
+  color: #FFFFCC;
+  background-color: rgba(0,0,104,253);
+  left: 10%;
+}
+#new_member:hover{
+  font-size: 200%;
+}
+/* #flogin{
+  border: 20px;
+  border-style: solid;
+  border-width: medium;
+  border-color: #000000;
+} */
+form{
+
+}

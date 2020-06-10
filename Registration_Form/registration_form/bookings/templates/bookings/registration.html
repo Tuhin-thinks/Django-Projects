@@ -1,0 +1,187 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+<br>
+
+    <center><img src="{% static 'COM LOGO.png' %}" alt="Image" height="280" width="280"></center>
+
+</br>
+<meta charset="UTF-8">
+<meta name="description" content="booking form">
+<title>REGISTRATION PAGE</title>
+<style type="text/css">
+</style>
+<script type="text/javascript">
+
+function save(){
+var user = document,getElementByld,("user").value;
+var pwd = document,getElementByld,("pwd").value;
+}
+</script>
+</head>
+<body>
+
+{% block content %}
+
+<body bgcolor="#E6E6FA">
+<div id="container">
+<form method="post" id="flogin">
+
+<boby bgcolor=#E6E6FA>
+
+
+<form name="regi" action="register1.jsp" method="POST">
+<h2>EVENT REGISTRATION FROM</h2>
+
+<label for="r1" id="fn">Company Name:</label>
+<input type="text" name="Cname" id="r1"><br/>
+<ul></ul>
+<label for="r2" id="bt">Business type: &nbsp;&nbsp;&nbsp;</label>
+<input type="text" name=”btype” id="r2"><br/>
+<ul></ul>
+<div class="booking-form-box">
+<label for="r1" id="Cr">Company Status:</label>
+<div class="radio-btn">
+<input type="radio" class="btn" name="check" checked="checked"><span>Registered</span>
+<input type="radio" class="btn" name="check"><span>Not Registered</span>
+<input type="radio" class="btn" name="check"><span>Imformal</span>
+</div>
+<label for="r1" id="rn">Registration no:</label>
+<input type="text" name="Rno" id="r1"><br/>
+<ul></ul>
+<h2>PHYSICAL ADDRESS</h2>
+<div class="event-registration-form-box">
+<div class="label">
+<label>Line 01:</label>
+<input type="text" class="form control" placeholder=" "<br/>
+<label>Line 02:</label>
+<input type="text" class="form control" placeholder=" "<br/>
+</div>
+<ul></ul>
+<div class="label">
+<label>Suburb/Township:</label>
+<input type="text" class="form control" placeholder=" "<br/>
+<label>City:</label>
+<input type="text" class="form control" placeholder=" "<br/>
+</div>
+<ul></ul>
+<div class="label">
+<label>Manucipality:</label>
+<input type="text" class="form control" placeholder=" "<br/>
+<label>Province:</label>
+<input type="text" class="form control" placeholder=" "<br/>
+<label>Code:</label>
+<input type="text" class="form control" placeholder=" "<br/>
+</div>
+<ul></ul>
+<h2>DELEGATION PERSONAL INFORMATION</h2>
+<ul></ul>
+<div class="radio-btn">
+<input type="radio" class="btn" name="check" checked="checked"><span>Mr</span>
+<input type="radio" class="btn" name="check"><span>Mrs</span>
+<input type="radio" class="btn" name="check"><span>Ms</span>
+</div>
+<div class="event-registration-form-box">
+<div class="label">
+<label>Full Names:</label>
+<input type="text" class="form control" placeholder=" "<br/>
+<label>Surname:</label>
+<input type="text" class="form control" placeholder=" "<br/>
+</div>
+<ul></ul>
+<div class="radio-btn">
+<input type="radio" class="btn" name="check" checked="checked"><span>Male</span>
+<input type="radio" class="btn" name="check"><span>Female</span>
+<input type="radio" class="btn" name="check"><span>Black</span>
+<input type="radio" class="btn" name="check"><span>White</span>
+<input type="radio" class="btn" name="check"><span>Coloured</span>
+</div>
+<div class="label">
+<label>Known as:</label>
+<input type="text" class="form control" placeholder=" "<br/>
+<label>Identity number:</label>
+<input type="text" class="form control" placeholder=" "<br/>
+<label>Position:</label>
+<input type="text" class="form control" placeholder=" "<br/>
+</div>
+<ul></ul>
+<div class="label">
+<label>Cell:</label>
+<input type="text" class="form control" placeholder=" "<br/>
+<label>Alt numnber:</label>
+<input type="text" class="form control" placeholder=" "<br/>
+<label>Fax number:</label>
+<input type="text" class="form control" placeholder=" "<br/>
+</div>
+<ul></ul>
+<div class="label">
+<label>Email Address:</label>
+<input type="text" class="form control" placeholder=" "<br/>
+<label>Nationality:</label>
+<input type="text" class="form control" placeholder=" "<br/>
+<label>Race:</label>
+<input type="text" class="form control" placeholder=" "<br/>
+</div>
+<ul></ul>
+<div class="radio-btn">
+<lable>Disability :</lable>
+<input type="radio" class="btn" name="check" checked="checked"><span>Yes</span>
+<input type="radio" class="btn" name="check"><span>No .</span>
+<label>If Yes,please elaborate:</label>
+<input type="text" class="form control" placeholder=" "<br/>
+</div>
+<ul></ul>
+<div class="radio-btn">
+<lable>Transport Requored:</lable>
+<input type="radio" class="btn" name="check" checked="checked"><span>Yes</span>
+<input type="radio" class="btn" name="check"><span>No .</span>
+</div>
+<lable>If Yes,please feel in pick up address:</lable>
+<div class="event-registration-form-box">
+<div class="label">
+<label>Line 01:</label>
+<input type="text" class="form control" placeholder=" "<br/>
+<label>Line 02:</label>
+<input type="text" class="form control" placeholder=" "<br/>
+</div>
+<ul></ul>
+<div class="label">
+<label>Suburb/Township:</label>
+<input type="text" class="form control" placeholder=" "<br/>
+<label>Next to:</label>
+<input type="text" class="form control" placeholder=" "<br/>
+</div>
+<br>
+<div style="padding-bottom: 18px;">Are you bringing guest(s)?<span style="color: red;"> *</span><br/>
+<span><input type="radio" id="data_7_0" name="data_7" value="Yes"/> Yes</span><br/>
+<span><input type="radio" id="data_7_1" name="data_7" value="No"/> No</span><br/>
+</div>
+<br>
+<div style="padding-bottom: 18px;">Guest's details<br/>
+<textarea id="data_8" false name="data_8" style="width : 450px;" rows="5" class="form-control"></textarea>
+</div>
+
+</div>
+<div style="padding-bottom: 18px;">Email<br/>
+<input type="text" id="data_10" name="data_10" style="width : 450px;" class="form-control"/>
+</div>
+<div style="padding-bottom: 18px;">Special requests<br/>
+<textarea id="data_11" false name="data_11" style="width : 450px;" rows="5" class="form-control"></textarea>
+</div>
+
+<div>
+<ul>
+<button type="submit" value="SUBMIT" id="button">SUBMIT</button>
+<button type="log out" value="LOG OUT" id="button">LOG OUT</button>
+<a href="{ urls 'home' }">Back to Home
+<value="Logout" id="sub" onclick="alert('SYSTEMS@RFID WELCOMES YOU')"></a>
+</ul>
+
+</div>
+</form>
+
+{% endblock %}
+
+</boby>
+</html>

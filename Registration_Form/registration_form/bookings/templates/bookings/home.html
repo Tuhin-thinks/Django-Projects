@@ -1,0 +1,42 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+<title>HOME PAGE</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="{% static 'style.css' %}">
+<br>
+<center><img  id="logo" src="{% static 'COM LOGO.png' %}" alt="Image" height="150px" width="auto"></center>
+</br>
+</head>
+<body>
+  <header>
+  <h2>LOGIN FORM</h2>
+{% block content %}
+<!-- <div style="background-image: url('https://images.assetsdelivery.com/compings_v2/flippo/flippo0708/flippo070800197.jpg');"> -->
+  </header>
+
+
+<body bgcolor="#E6E6FA">
+<div id="container">
+  <form method="post" id="flogin">{% csrf_token %}
+    <label for="uname" id="un" style ="" >Username</label>
+    <input type="text" name="user" placeholder="Enter Username" id="uname"><br/><br/>
+    <label for="upass" id="ps" style ="">Password</label>
+    <input type="password" name="pass" placeholder="Enter Password" id="upass"><br/><br/>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+    <button type=”submit” name="click" id="sub" onclick="alert('Hi {{ user.username }}!')">Login
+
+      <id="sub" onclick="alert('You have not logged in')">
+    </button>
+    <a href="register.html" style="color:blue;">New Member</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="register.html" style="color:blue;">Forgot Password</a>
+
+  </form>
+</div>
+{% endblock %}
+</body>
+</html>
