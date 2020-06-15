@@ -1,1 +1,17 @@
 Project to implement a registration form for an event.
+
+CHANGES MADE 2020/06/15
+path('new_member/', views.new_member),
+AttributeError: module 'bookings.views' has no attribute 'new_member'
+<input type="radio" class="btn" name="check" checked="checked"><span>Male</span>
+<input type="radio" class="btn" name="check"><span>Female</span>
+path('new_member/', views.forgot_password),
+Invalid block tag on line 1: 'extend'. Did you forget to register or load this tag?
+   1 :  {% extend "login.html" %} 
+https://github.com/Sipho123/Django-Projects-2020.git
+ADMI PALNEL
+<a href="this PC.html"><select from the PC id="this PC"></select></a>
+added {% endblock %}
+rename the page as ADMINISTRATION PAGE
+
+
