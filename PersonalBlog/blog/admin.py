@@ -1,5 +1,9 @@
 from django.contrib import admin
-from .models import Post
+from .models import Post, Contact
+
+
+class ContactAdmin(admin.ModelAdmin):
+    search_fields = ('name',)
 
 
 class PostAdmin(admin.ModelAdmin):
@@ -9,4 +13,5 @@ class PostAdmin(admin.ModelAdmin):
     prepopulated_fields = {'slug': ('title', )}
 
 
+admin.site.register(Contact, ContactAdmin)
 admin.site.register(Post, PostAdmin)

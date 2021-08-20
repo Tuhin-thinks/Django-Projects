@@ -1,6 +1,20 @@
 from django.views import generic
 from django.shortcuts import render
-from .models import Post
+from .models import Post, Contact
+
+
+def contact(request):
+    context = {'success': False}
+    if request.method == "POST":
+        name = request.POST['name']
+        email = request.POST['email']
+        phone = request.POST['phone']
+        Textarea = request.POST['Textarea']
+        ins = Contact(name=name, email=email, phone=phone, Textarea=Textarea)
+        ins.save()
+        context = {'success': True}
+
+    return render(request, 'contact.html', context)
 
 
 class PostList(generic.ListView):
