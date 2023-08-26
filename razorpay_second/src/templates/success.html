@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+{% load static %}
+{% load humanize %}
+{% block content %}
+    <div class="d-flex justify-content-center align-items-center"
+         style="min-height: 100vh">
+        {% if is_success %}
+            <div class="text-center m-5">
+                <img src="{% static 'images/success.png' %}"
+                     alt=""
+                     class="img-fluid"
+                     style="height: 200px" />
+            </div>
+        {% elif not is_success or not greet_text %}
+            <div class="text-center m-5">
+                <img src="{% static 'images/error.png' %}"
+                     alt=""
+                     class="img-fluid"
+                     style="height: 200px" />
+            </div>
+        {% endif %}
+        <div class="text-center">
+            {% if is_success %}
+                <h2 class="display-5">
+                    <i class="fas fa-check-circle text-success"></i>
+                    Payment Successful
+                </h2>
+                <p>
+                    Thanks {{ user.name }}, for your payment of {{ payment.amount|intcomma }}.
+                    <br />
+                    Payment Id: {{ payment.id }}
+                </p>
+            {% elif not is_success and not greet_text %}
+                <h2 class="display-5">
+                    <i class="fas fa-times-circle text-danger"></i>
+                    Uh Oh! Something went wrong.
+                </h2>
+                <p>You should not be here.</p>
+            {% else %}
+                <h2 class="display-5">
+                    <i class="fas fa-times-circle text-danger"></i>
+                    Payment Failed
+                </h2>
+            {% endif %}
+            <p class="lead">{% firstof greet_text "Sorry, Did you forget to pay again?" %}</p>
+            <a href="{% url 'home' %}" class="btn btn-primary">Return Home</a>
+        </div>
+    {% endblock content %}
+</div>

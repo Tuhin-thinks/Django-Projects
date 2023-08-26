@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{% block content %}
+    <div>
+        <div class="d-flex align-items-center justify-content-center mx-auto flex-column"
+             style="min-height: 100vh">
+            <div class="p-5">
+                <h1>Buy Programmer a Laptop!</h1>
+            </div>
+            <div class="d-flex flex-row">
+                <div class="text-center mx-5">
+                    <img src="https://purepng.com/public/uploads/large/purepng.com-laptopelectronicslaptopcomputer-941524676166s0nuj.png"
+                         alt=""
+                         class="img-fluid img-responsive"
+                         style="height: 300px" />
+                </div>
+                <form method="post">
+                    {% csrf_token %}
+                    <div class="form-group mb-2 p-3">
+                        <lablel for="inputName">Enter your name</lablel>
+                        <input type="name"
+                               name="name"
+                               class="form-control"
+                               id="inputName"
+                               placeholder="Enter name" />
+                    </div>
+                    <div class="form-group mb-2 p-3">
+                        <label for="inputAmt">Enter donation amount</label>
+                        <input type="number"
+                               name="amount"
+                               class="form-control"
+                               id="inputAmt"
+                               placeholder="Enter amount" />
+                    </div>
+                    <button type="submit" class="btn btn-success btn-block m-3">Submit</button>
+                </form>
+            </div>
+            {% if payment %}
+                <div class="text-center m-3">
+                    <form action="{% url 'success' %}" method="post">
+                        {% csrf_token %}
+                        <script src="https://checkout.razorpay.com/v1/checkout.js"
+                                data-key="{{ key }}"
+                                data-amount="{{ payment.amount }}"
+                                data-order_id="{{ payment.id }}"
+                                data-name="Buy Programmer a Laptop"
+                                data-description="Donate to a good cause"
+                                data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
+                                data-locale="auto"
+                                data-currency="INR"
+                                data-buttontext="Pay with Razorpay"></script>
+                    </form>
+                </div>
+            {% endif %}
+        </div>
+    </div>
+{% endblock content %}
